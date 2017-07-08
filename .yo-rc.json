@@ -1,0 +1,29 @@
+{
+  "generator-android-hipster": {
+    "appPackage": "br.com.reneluan.news",
+    "appName": "News",
+    "language": "kotlin",
+    "nucleus": false,
+    "mvp": "embeed",
+    "imageLib": "glide",
+    "picasso": false,
+    "glide": true,
+    "eventbus": true,
+    "mixpanel": false,
+    "timber": true,
+    "jodatime": true,
+    "threetenabp": false,
+    "paperparcel": true,
+    "jodamoney": false,
+    "butterknife": false,
+    "androidTargetSdkVersion": 26,
+    "minSdk": 15,
+    "calligraphy": true,
+    "playServices": [
+      "base"
+    ],
+    "stetho": false,
+    "printview": false,
+    "autoparcel": true
+  }
+}

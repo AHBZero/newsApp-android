@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Android Hipster</string>
+  <string name="source_name">SourceHipsterActivity</string>
+  <string name="article_name">ArticleHipsterActivity</string>
+</resources>
