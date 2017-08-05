@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Todas"
+            android:id="@+id/menu_all"
+            android:icon="@drawable/ic_all_inclusive_black_24dp" />
+        <item
+            android:id="@+id/menu_business"
+            android:icon="@drawable/ic_business_black_24dp"
+            android:title="Negócios" />
+        <item
+            android:id="@+id/menu_entertainment"
+            android:icon="@drawable/ic_desktop_windows_black_24dp"
+            android:title="Entreterimento" />
+        <item
+            android:id="@+id/menu_gaming"
+            android:icon="@drawable/ic_games_black_24dp"
+            android:title="Jogos" />
+        <item
+            android:id="@+id/menu_general"
+            android:icon="@drawable/ic_done_black_24dp"
+            android:title="Geral" />
+        <item
+            android:id="@+id/menu_music"
+            android:icon="@drawable/ic_music_note_black_24dp"
+            android:title="Música" />
+        <item
+            android:id="@+id/menu_politics"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Politica" />
+        <item
+            android:id="@+id/menu_science_and_nature"
+            android:icon="@drawable/ic_wb_incandescent_black_24dp"
+            android:title="Ciência e Natureza" />
+        <item
+            android:id="@+id/menu_sport"
+            android:icon="@drawable/ic_rowing_black_24dp"
+            android:title="Esporte" />
+        <item
+            android:id="@+id/menu_technology"
+            android:icon="@drawable/ic_devices_black_24dp"
+            android:title="Tecnologia" />
+    </group>
+</menu>

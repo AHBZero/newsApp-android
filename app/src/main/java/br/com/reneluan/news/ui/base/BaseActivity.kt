@@ -15,8 +15,6 @@ abstract class BaseActivity<P : BasePresenter<*>?> : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutResource())
         injectModule()
-        
-        
     }
 
     protected abstract fun injectModule()

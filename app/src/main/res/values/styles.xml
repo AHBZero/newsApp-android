@@ -7,4 +7,25 @@
   <style name="AppTheme" parent="AppTheme.Base"/>
   <style name="SourceStyle" parent="AppTheme"/>
   <style name="ArticleStyle" parent="AppTheme"></style>
+
+  <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="android:minHeight">?actionBarSize</item>
+    <item name="android:maxHeight">?actionBarSize</item>
+    <item name="colorControlNormal">@color/colorPrimary</item>
+    <item name="android:textColorPrimary">@color/colorPrimary</item>
+    <item name="android:textColorPrimaryInverse">@color/colorPrimary</item>
+    <item name="android:textColorSecondary">@color/colorPrimary</item>
+    <item name="android:actionMenuTextColor">@color/colorPrimary</item>
+    <item name="elevation">4dp</item>
+  </style>
+  <style name="ToolbarTitleStyle">
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/greyish_brown</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
 </resources>

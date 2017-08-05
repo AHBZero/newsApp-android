@@ -15,13 +15,27 @@ class SourcePresenter @Inject constructor() : BasePresenter<SourceView>() {
         sourceInteractor
                 .getAllSources()
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe (
-                    {
-                        view?.showSources(it)
-                    },
-                    {
-                        Timber.e(it)
-                    }
+                .subscribe(
+                        {
+                            view?.showSources(it)
+                        },
+                        {
+                            Timber.e(it)
+                        }
+                )
+    }
+
+    fun getSources(category: String) {
+        sourceInteractor
+                .getSources(category)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        {
+                            view?.showSources(it)
+                        },
+                        {
+                            Timber.e(it)
+                        }
                 )
     }
 

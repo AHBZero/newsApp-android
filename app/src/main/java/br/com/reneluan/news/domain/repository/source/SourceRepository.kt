@@ -17,4 +17,10 @@ class SourceRepository @Inject constructor() {
                 }
     }
 
+    fun getSources(category: String): Observable<List<Source>> {
+        return remoteRepository
+                .getSources(category)
+                .map { it.sources }
+    }
+
 }

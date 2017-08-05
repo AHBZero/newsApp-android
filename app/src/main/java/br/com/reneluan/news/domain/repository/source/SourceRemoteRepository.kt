@@ -19,11 +19,14 @@ class SourceRemoteRepository @Inject constructor(retrofit: Retrofit) {
                 .compose(ExtractResult<SourceResponse>())
     }
 
+    fun getSources(category: String): Observable<SourceResponse>{
+        return service.getSources(category)
+                .compose(ExtractResult<SourceResponse>())
+    }
+
     interface SourceService {
         @GET("sources")
-        fun getAllSources(
-//                @Query("apiKey") apiKey: String = BuildConfig.API_KEY
-        ): Observable<Result<SourceResponse>>
+        fun getAllSources(): Observable<Result<SourceResponse>>
 
         @GET("sources")
         fun getSources(

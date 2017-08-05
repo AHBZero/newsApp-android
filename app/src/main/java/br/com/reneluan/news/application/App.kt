@@ -8,8 +8,6 @@ import br.com.reneluan.news.R
 import br.com.reneluan.news.di.ForApplication
 import br.com.reneluan.news.di.components.ApplicationComponent
 import br.com.reneluan.news.environment.EnvironmentConfiguration
-import kotlin.properties.Delegates
-
 
 import net.danlew.android.joda.JodaTimeAndroid
 

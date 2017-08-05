@@ -21,9 +21,11 @@ class SourceAdapter(val context: Context) : BaseAdapter<Source>() {
     inner class ViewHolder(val item: View, adapter: SourceAdapter) : BaseAdapter.ViewHolder<Source>(item, adapter) {
 
         val txtTitle by lazy { item.find<TextView>(R.id.txt_title) }
+        val txtDescription by lazy { item.find<TextView>(R.id.txt_description) }
 
         override fun bindItem(value: Source, position: Int) {
             txtTitle.text = value.name
+            txtDescription.text = value.description
         }
 
     }

@@ -20,4 +20,10 @@ class SourceInteractor @Inject constructor(executor: Scheduler) : BaseInteractor
                 .subscribeOn(executor)
     }
 
+    fun getSources(category: String): Observable<List<Source>>{
+        return sourceRepository
+                .getSources(category)
+                .subscribeOn(executor)
+    }
+
 }
